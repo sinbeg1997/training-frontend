@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "HelveticaNeue-Thin", sans-serif;
+}
+
+#logo-nav {
+  border-top: 6px solid #ececec;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+#logo-nav .navbar-expand-lg {
+  width: 100%;
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 35px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#logo-nav .navbar-expand-lg .navbar-toggler .navbar-toggler-icon {
+  outline: 0;
+}
+
+#logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 922px) {
+  #logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: unset;
+  }
+}
+
+#logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: left;
+}
+
+@media screen and (min-width: 922px) {
+  #logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 50px;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    text-align: unset;
+  }
+}
+
+#logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.home {
+  position: relative;
+}
+
+#logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.home::before {
+  display: none;
+}
+
+@media screen and (min-width: 922px) {
+  #logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item.home::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #ececec;
+    left: 140px;
+    bottom: 73px;
+    border: 10px solid #ececec;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(360deg);
+    background: transparent;
+  }
+}
+
+#logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link-main {
+  color: #bdbdbd;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#logo-nav .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link-add {
+  color: #474747;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#about .container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+#about .container h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#about .container p {
+  width: 100%;
+  font-size: 12px;
+  font-style: italic;
+  color: #d7d7d7;
+}
+
+@media screen and (min-width: 922px) {
+  #about .container p {
+    width: 50%;
+  }
+}
+
+#about .container img {
+  width: 100%;
+}
+
+#main-section .container {
+  padding: 40px 0;
+  width: 100%;
+  max-width: 1100px;
+}
+
+#main-section .container .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 922px) {
+  #main-section .container .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+}
+
+#main-section .container .wrapper .wrapper-content {
+  width: 95%;
+  padding-left: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+}
+
+@media screen and (min-width: 922px) {
+  #main-section .container .wrapper .wrapper-content {
+    width: 32%;
+  }
+}
+
+#main-section .container .wrapper .wrapper-content h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#main-section .container .wrapper .wrapper-content p {
+  width: 100%;
+  font-style: unset;
+  font-size: 12px;
+}
+
+#main-section .container .wrapper .wrapper-content p.first {
+  font-style: italic;
+}
+
+#main-section .container img {
+  width: 100%;
+}
+
+#profile-section .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 922px) {
+  #profile-section .container {
+    width: 100%;
+    max-width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+}
+
+#profile-section .container .wrapper-column {
+  width: 100%;
+}
+
+@media screen and (min-width: 922px) {
+  #profile-section .container .wrapper-column {
+    width: 30%;
+  }
+}
+
+#profile-section .container .wrapper-column img {
+  width: 50%;
+}
+
+@media screen and (min-width: 922px) {
+  #profile-section .container .wrapper-column img {
+    width: 100%;
+  }
+}
+
+#profile-section .container .wrapper-column .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+#profile-section .container .wrapper-column .title .content h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#profile-section .container .wrapper-column .title .content h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#profile-section .container .wrapper-column .title p {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+#profile-section .container .wrapper-column p {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+#profile-section .end {
+  width: 100%;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=style.css.map */

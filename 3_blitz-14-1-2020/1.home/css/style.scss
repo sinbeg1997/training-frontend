@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "HelveticaNeue-Thin", sans-serif;
+}
+#logo-nav {
+  border-top: 6px solid #ececec;
+
+  overflow: hidden;
+  overflow-x: hidden;
+
+  .navbar-expand-lg {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    text-align: center;
+    margin: 35px auto;
+    justify-content: space-between;
+    .navbar-toggler {
+      .navbar-toggler-icon {
+        outline: 0;
+      }
+    }
+
+    .navbar-collapse {
+      // display: block !important;
+      .navbar-nav {
+        margin-top: 30px;
+        @media screen and (min-width: 922px) {
+          display: flex;
+          margin-bottom: unset;
+          justify-content: space-between;
+          margin-top: unset;
+        }
+        .nav-item {
+          align-items: start;
+          text-align: left;
+          @media screen and (min-width: 922px) {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            align-items: unset;
+            text-align: unset;
+          }
+          &.home {
+            position: relative;
+            // margin: 0 auto;
+            &::before {
+              display: none;
+              @media screen and (min-width: 922px) {
+                position: absolute;
+                display: block;
+                content: "";
+                background-color: #ececec;
+                left: 15px;
+                bottom: 73px;
+                border: 10px solid #ececec;
+                border-left-color: transparent;
+                border-bottom-color: transparent;
+                border-right-color: transparent;
+                -webkit-transform: rotate(-180deg);
+                transform: rotate(360deg);
+                background: transparent;
+              }
+            }
+          }
+          .nav-link-main {
+            color: #bdbdbd;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+          .nav-link-add {
+            color: #474747;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+// .nav {
+//   display: block;
+//   ul {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: unset;
+//     &.main-nav {
+//       li {
+//         color: #bdbdbd;
+//         font-size: 12px;
+//         text-transform: uppercase;
+//       }
+//     }
+//     &.add-nav {
+//       li {
+//         font-size: 20px;
+//         text-transform: uppercase;
+//         font-weight: 700;
+//       }
+//     }
+
+//     li {
+//       margin-left: 50px;
+//       text-align: center;
+//       list-style: none;
+//       margin-bottom: 10px;
+//     }
+//   }
+
+#feature-work {
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    img {
+      /* width: 1100px; */
+      width: 100%;
+      max-width: 1100px;
+      &:before {
+        content: "FEATURED WORK";
+        font-size: 70px;
+        position: absolute;
+        z-index: 2;
+        top: 258px;
+        right: 60px;
+      }
+    }
+    .contain {
+      padding: 20px;
+      background-color: #f6f6f6;
+      position: relative;
+      &::before {
+        display: none;
+        @media screen and (min-width: 922px) {
+          position: absolute;
+          display: block;
+          content: "";
+          background-color: #f6f6f6;
+          left: 628px;
+          bottom: 131px;
+          border: 10px solid #f6f6f6;
+          border-left-color: transparent;
+          border-bottom-color: transparent;
+          border-right-color: transparent;
+          /* border-top-color: transparent; */
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-180deg);
+          background: transparent;
+        }
+      }
+      h4 {
+        font-size: 16px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+#about {
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    flex-direction: column;
+    text-align: left;
+    @media screen and (min-width: 922px) {
+      display: flex;
+      padding-top: 70px;
+      justify-content: space-between;
+      flex-direction: unset;
+    }
+    .wrapper-column {
+      width: 100%;
+      margin-top: 20px;
+      @media screen and (min-width: 922px) {
+        width: 30%;
+        margin-top: unset;
+      }
+      .icon-title {
+        display: flex;
+        i.fas {
+          font-size: 40px;
+          padding-right: 30px;
+        }
+        h2 {
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
+      p {
+        font-size: 12px;
+      }
+
+      .find {
+        display: flex;
+        .fa-angle-double-right {
+          padding-right: 10px;
+        }
+        h4 {
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+#project {
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .lastest-work {
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 40%;
+        height: 46px;
+      }
+      h1 {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        align-items: center;
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+    .wrapper {
+      flex-direction: column;
+      text-align: left;
+      @media screen and (min-width: 922px) {
+        display: flex;
+        padding-top: 70px;
+        justify-content: space-between;
+        flex-direction: unset;
+      }
+      .wrapper-project {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        @media screen and (min-width: 922px) {
+          width: 22%;
+          text-align: unset;
+        }
+
+        img {
+          width: 100%;
+          max-width: 235px;
+          animation-delay: 0.5s;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          margin-top: 20px;
+        }
+        p {
+          font-size: 12px;
+        }
+        .view {
+          display: flex;
+          i.fas.fa-angle-double-right {
+            padding-right: 10px;
+          }
+          h4 {
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
